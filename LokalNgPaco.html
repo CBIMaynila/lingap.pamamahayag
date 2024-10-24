@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lingap Pamamahayag</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="manifest" href="manifest.json">
+        <script>
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(function(registration) {
+              console.log('Service worker registered with scope:', registration.scope);
+            }).catch(function(error) {
+              console.log('Service worker registration failed:', error);
+            });
+          }
+        </script>
+    </head>
+    <body>
+        <div class="content">
+          <img src="bg.jpg">
+        </div>
+        <footer>
+            <p>THIS IS AN OFFICIAL STUB OF LOKAL NG PACO | &copy; 2024-1</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+

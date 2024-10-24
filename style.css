@@ -19,21 +19,6 @@ body {
     object-fit: contain; /* Maintain aspect ratio */
 }
 
-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #2320be;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #2320be;
-}
-
 footer {
     text-align: center;
     padding: 10px;

@@ -1,7 +1,5 @@
+/* Global Styles */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #000000;
@@ -10,19 +8,22 @@ body {
     overflow: hidden; /* Prevent overflow on smaller screens */
 }
 
+/* Flex Container for Centering Content */
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
+    height: 100vh; /* Full height for viewport */
+    width: 100%; /* Full width */
 }
 
+/* Responsive Image */
 .content img {
-    max-width: 100%; /* Responsive image */
+    max-width: 100%; /* Scale down to fit the container */
     height: auto; /* Maintain aspect ratio */
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px;
@@ -31,4 +32,19 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+    body {
+        overflow: auto; /* Allow scrolling if content overflows */
+    }
+
+    .content {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    footer {
+        position: relative; /* Change footer position for smaller screens */
+    }
 }

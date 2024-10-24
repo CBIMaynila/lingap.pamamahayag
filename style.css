@@ -13,8 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full height for viewport */
-    width: 100%; /* Full width */
+    width: 100%;
 }
 
 /* Responsive Image */
